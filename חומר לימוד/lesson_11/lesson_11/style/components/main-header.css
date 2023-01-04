@@ -1,0 +1,35 @@
+:root {
+    --bs-primary: #0d6efd;
+    --bs-primary-active: #0a58ca;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --almog: blue;
+}
+
+.main-header {
+    height: 100px;
+    background-color: var(--almog);
+}
+
+.main-header .logo {
+    font-family: inconsolata, monospace;
+    font-size: 2.14285714em;
+    color: var(--bs-primary);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.main-header .main-nav a {
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-header .main-nav a:hover {
+    color: var(--bs-primary-active);
+}

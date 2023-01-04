@@ -1,0 +1,45 @@
+@media screen and (max-width:460px) {
+    .menu-btn {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    header {
+        flex-direction: column;
+        height: 120px;
+    }
+    .logo {
+        height: 60px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .menu-btn {
+        margin-bottom: 0.5rem;
+    }
+    section:first-of-type img {
+        display: none;
+    }
+    section:first-of-type div.flex-basis50:last-child {
+        display: none;
+    }
+    section:first-of-type div.flex-basis50:first-child {
+        flex-basis: 100%;
+    }
+    .cards-container {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    .card-item{
+        width: 90%;
+        padding: auto;
+        margin: 1rem;
+    
+    }
+    .logo {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    
+}

@@ -1,0 +1,78 @@
+/* MOBILE ONLY  */
+
+
+/* קטן מ920 */
+
+@media (max-width: 920px) {
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: rgb(255 255 255 / 90%);
+        height: 100vh;
+        min-width: 220px;
+        border-left: solid 1px var(--bs-dark);
+        transform: translateX(100%);
+        transition: transform .6s, box-shadow .6s;
+    }
+    body.menu-open .main-nav {
+        transform: translateX(0);
+        box-shadow: -10px 0px 13px rgb(0 0 0 / 16%);
+    }
+    .main-header .main-nav a {
+        /* for w and h convert inline to block */
+        display: block;
+        padding: 1.125rem 1.6rem;
+        transition: background-color .3s;
+    }
+    /* .main-header .main-nav a:hover {
+        background-color: rgb(159, 153, 153);
+    } */
+    .main-header .main-nav li {
+        border-bottom: solid 1px var(--bs-secondary);
+    }
+}
+
+
+/* SMALL */
+
+
+/* גדול מ660 */
+
+@media (min-width: 660px) {
+    .main-layout {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+
+/* MEDIUM */
+
+
+/* גדול מ920 */
+
+@media (min-width: 920px) {
+    .main-layout {
+        max-width: 860px;
+    }
+    .main-header .main-nav>*:not(:last-child) {
+        margin-inline-end: 100px;
+    }
+    .btn-menu {
+        display: none;
+    }
+}
+
+
+/* LARGE */
+
+
+/* גדול מ1120 */
+
+@media (min-width: 1120px) {
+    .main-layout {
+        max-width: 1060px;
+    }
+}

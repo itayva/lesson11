@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: skyblue;
+}
+
+.sun {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: yellow;
+    top: 0;
+    opacity: 1;
+    transition: 0.8s;
+}
+
+/* tablet */
+@media  screen and (max-width:760px) {
+    
+    body{
+        background-color: rgb(100, 49, 20);  
+    }
+     .sun {
+        background-color: rgb(153, 57, 12);
+        top: 300px;
+        opacity: 0.7;
+     }
+}
+
+/* mobile */
+@media screen and (max-width:460px) {
+
+    body {
+        background-color: rgb(20, 20, 19);
+    }
+
+    .sun {
+        background-color: rgb(58, 19, 0);
+        top: 90%;
+        opacity: 0.7s;
+    }
+    
+}

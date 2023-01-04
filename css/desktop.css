@@ -1,0 +1,10 @@
+body {
+    background-color: skyblue;
+}
+
+.sun {
+    top: 0;
+    background-color: yellow;
+    opacity: 1;
+    bottom: unset;
+}
